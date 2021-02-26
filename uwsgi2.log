@@ -1,0 +1,54 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 26 21:15:52 2021] ***
+compiled with version: Clang 11.0.0 on 18 January 2021 21:53:06
+os: Darwin-19.6.0 Darwin Kernel Version 19.6.0: Mon Aug 31 22:12:52 PDT 2020; root:xnu-6153.141.2~1/RELEASE_X86_64
+nodename: promote.cache-dns.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /Volumes/MacData/Pycharm/projectFile/SecondHandMarket
+writing pidfile to uwsgi2.pid
+detected binary path: /Volumes/MacData/Anaconda/VirtualEnvironment/SecondHandMarket/bin/uwsgi
+chdir() to /Volumes/MacData/Pycharm/projectFile/SecondHandMarket
+your processes number limit is 2784
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 3.8.6 | packaged by conda-forge | (default, Dec 26 2020, 04:50:20)  [Clang 11.0.0 ]
+Set PythonHome to /Volumes/MacData/Anaconda/VirtualEnvironment/SecondHandMarket
+Python main interpreter initialized at 0x7fc3c78068e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416800 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x7fc3c78068e0 pid: 10819 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10819)
+spawned uWSGI worker 1 (pid: 10827, cores: 2)
+spawned uWSGI worker 2 (pid: 10828, cores: 2)
+spawned uWSGI worker 3 (pid: 10829, cores: 2)
+spawned uWSGI worker 4 (pid: 10830, cores: 2)
+[pid: 10829|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 798 bytes} [Fri Feb 26 21:22:39 2021] GET /favicon.ico => generated 179 bytes in 3261 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 10829|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 790 bytes} [Fri Feb 26 21:22:53 2021] GET /favicon.ico => generated 179 bytes in 2 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 850 bytes} [Fri Feb 26 21:23:20 2021] GET /templates/login.html => generated 179 bytes in 364 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 2/4] 127.0.0.1 () {50 vars in 1024 bytes} [Fri Feb 26 21:24:30 2021] POST /user/login/ => generated 0 bytes in 390 msecs (HTTP/1.1 302) 10 headers in 611 bytes (1 switches on core 1)
+[pid: 10828|app: 0|req: 1/5] 127.0.0.1 () {44 vars in 863 bytes} [Fri Feb 26 21:24:32 2021] GET /goods/5 => generated 9833 bytes in 3914 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 3/6] 127.0.0.1 () {44 vars in 874 bytes} [Fri Feb 26 21:24:43 2021] GET /user/logout/ => generated 0 bytes in 11 msecs (HTTP/1.1 302) 8 headers in 299 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 4/7] 127.0.0.1 () {44 vars in 819 bytes} [Fri Feb 26 21:24:45 2021] GET /goods/5 => generated 9805 bytes in 401 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 10828|app: 0|req: 2/8] 127.0.0.1 () {42 vars in 778 bytes} [Fri Feb 26 21:24:58 2021] GET /index/ => generated 9301 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 5/9] 127.0.0.1 () {50 vars in 980 bytes} [Fri Feb 26 21:26:55 2021] POST /user/login/ => generated 0 bytes in 146 msecs (HTTP/1.1 302) 10 headers in 611 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 6/10] 127.0.0.1 () {44 vars in 863 bytes} [Fri Feb 26 21:26:57 2021] GET /goods/5 => generated 9833 bytes in 30 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 10829|app: 0|req: 3/11] 127.0.0.1 () {42 vars in 775 bytes} [Fri Feb 26 21:27:04 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 10828|app: 0|req: 3/12] 127.0.0.1 () {44 vars in 865 bytes} [Fri Feb 26 21:27:20 2021] GET /user/ => generated 5184 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 7/13] 127.0.0.1 () {44 vars in 862 bytes} [Fri Feb 26 21:27:39 2021] GET /goods/6 => generated 9626 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 8/14] 127.0.0.1 () {42 vars in 799 bytes} [Fri Feb 26 21:28:35 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 10829|app: 0|req: 4/15] 127.0.0.1 () {44 vars in 911 bytes} [Fri Feb 26 21:28:47 2021] GET /templates/login.html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 9/16] 127.0.0.1 () {42 vars in 822 bytes} [Fri Feb 26 21:31:41 2021] GET /index/ => generated 9329 bytes in 87 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 10/17] 127.0.0.1 () {44 vars in 874 bytes} [Fri Feb 26 21:31:47 2021] GET /user/logout/ => generated 0 bytes in 8 msecs (HTTP/1.1 302) 8 headers in 299 bytes (1 switches on core 1)
+[pid: 10830|app: 0|req: 11/18] 127.0.0.1 () {44 vars in 819 bytes} [Fri Feb 26 21:31:48 2021] GET /goods/2 => generated 9977 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 10830|app: 0|req: 12/19] 127.0.0.1 () {42 vars in 778 bytes} [Fri Feb 26 21:32:06 2021] GET /index/ => generated 9301 bytes in 43 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 10829|app: 0|req: 5/20] 127.0.0.1 () {44 vars in 819 bytes} [Fri Feb 26 21:32:13 2021] GET /goods/5 => generated 9805 bytes in 754 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 10828|app: 0|req: 4/21] 127.0.0.1 () {42 vars in 780 bytes} [Fri Feb 26 21:32:38 2021] GET /goods/2 => generated 9977 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
