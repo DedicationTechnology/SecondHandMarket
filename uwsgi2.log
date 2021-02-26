@@ -52,3 +52,9 @@ spawned uWSGI worker 4 (pid: 10830, cores: 2)
 [pid: 10830|app: 0|req: 12/19] 127.0.0.1 () {42 vars in 778 bytes} [Fri Feb 26 21:32:06 2021] GET /index/ => generated 9301 bytes in 43 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
 [pid: 10829|app: 0|req: 5/20] 127.0.0.1 () {44 vars in 819 bytes} [Fri Feb 26 21:32:13 2021] GET /goods/5 => generated 9805 bytes in 754 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
 [pid: 10828|app: 0|req: 4/21] 127.0.0.1 () {42 vars in 780 bytes} [Fri Feb 26 21:32:38 2021] GET /goods/2 => generated 9977 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
