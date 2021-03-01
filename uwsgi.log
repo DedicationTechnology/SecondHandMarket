@@ -467,3 +467,49 @@ spawned uWSGI worker 4 (pid: 2966, cores: 2)
 [pid: 2965|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 740 bytes} [Sun Feb 28 21:33:22 2021] GET /favicon.ico => generated 179 bytes in 52 msecs (HTTP/1.1 404) 5 headers in 158 bytes (2 switches on core 1)
 [pid: 2966|app: 0|req: 1/3] 127.0.0.1 () {50 vars in 989 bytes} [Sun Feb 28 21:50:59 2021] POST /user/register/ => generated 0 bytes in 11445 msecs (HTTP/1.1 302) 6 headers in 186 bytes (1 switches on core 0)
 [pid: 2966|app: 0|req: 2/4] 127.0.0.1 () {46 vars in 856 bytes} [Sun Feb 28 21:51:10 2021] GET /index/ => generated 9301 bytes in 706 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+[pid: 2964|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 794 bytes} [Sun Feb 28 22:11:19 2021] GET /user/register/ => generated 2602 bytes in 3023 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 2965|app: 0|req: 3/6] 127.0.0.1 () {50 vars in 989 bytes} [Sun Feb 28 22:11:42 2021] POST /user/register/ => generated 0 bytes in 531 msecs (HTTP/1.1 302) 6 headers in 186 bytes (1 switches on core 0)
+[pid: 2965|app: 0|req: 4/7] 127.0.0.1 () {46 vars in 856 bytes} [Sun Feb 28 22:11:42 2021] GET /index/ => generated 9301 bytes in 595 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Volumes/MacData/Pycharm/projectFile/SecondHandMarket
+closing all non-uwsgi socket fds > 2 (max_fd = 10240)...
+found fd 3 mapped to socket 0 (127.0.0.1:9080)
+running /Volumes/MacData/Anaconda/VirtualEnvironment/SecondHandMarket/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Feb 28 22:20:55 2021] ***
+compiled with version: Clang 11.0.0 on 18 January 2021 21:53:06
+os: Darwin-19.6.0 Darwin Kernel Version 19.6.0: Mon Aug 31 22:12:52 PDT 2020; root:xnu-6153.141.2~1/RELEASE_X86_64
+nodename: promote.cache-dns.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /Volumes/MacData/Pycharm/projectFile/SecondHandMarket
+detected binary path: /Volumes/MacData/Anaconda/VirtualEnvironment/SecondHandMarket/bin/uwsgi
+chdir() to /Volumes/MacData/Pycharm/projectFile/SecondHandMarket
+your processes number limit is 2784
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9080 fd 3
+Python version: 3.8.6 | packaged by conda-forge | (default, Dec 26 2020, 04:50:20)  [Clang 11.0.0 ]
+Set PythonHome to /Volumes/MacData/Anaconda/VirtualEnvironment/SecondHandMarket
+Python main interpreter initialized at 0x7f97eb40bdb0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416800 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f97eb40bdb0 pid: 2954 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2954)
+spawned uWSGI worker 1 (pid: 3643, cores: 2)
+spawned uWSGI worker 2 (pid: 3644, cores: 2)
+spawned uWSGI worker 3 (pid: 3645, cores: 2)
+spawned uWSGI worker 4 (pid: 3646, cores: 2)
